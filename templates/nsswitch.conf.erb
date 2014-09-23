@@ -8,9 +8,9 @@
 # If you have the `glibc-doc-reference' and `info' packages installed, try:
 # `info libc "Name Service Switch"' for information about this file.
 
-passwd:         files sss ldap #<% if @module_type == 'ldap' then %>ldap<% end %>
-group:          files sss ldap #<% if @module_type == 'ldap' then %>ldap<% end %>
-shadow:         files sss ldap #<% if @module_type == 'ldap' then %>ldap<% end %>
+passwd:         files sss ldap
+group:          files sss ldap
+shadow:         files sss ldap
 
 hosts:          files dns
 networks:       files
@@ -21,3 +21,4 @@ ethers:         db files
 rpc:            db files
 
 netgroup:       nis
+aliases:        files nisplus
